@@ -7,6 +7,8 @@ import rateLimit from 'express-rate-limit';
 import config from './config';
 import errorhandler from 'errorhandler';
 import bodyParser from 'body-parser';
+import usersRouter from './users/users-router';
+import authRouter from './auth/auth-router';
 
 const { NODE_ENV } = config;
 const app: Application = express();
@@ -39,6 +41,8 @@ if (NODE_ENV === 'development') {
 };
 
 // routers here
+app.use('/users', usersRouter);
+app.use('/auth', authRouter);
 
 app.get('/', (req: Request, res: Response): void => {
   res.send('home');
