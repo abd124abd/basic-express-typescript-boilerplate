@@ -15,9 +15,9 @@
   * MIGRATION_DB_USER
   * MIGRATION_DB_PASS
 
-  ### branches
-  * jwt-auth
-    * bcryptjs, jsonwebtoken
-    * .env (addition)
-      * JWT_SECRET
-      * JWT_EXPIRY
+ ### branches
+ * jwt-auth
+   * bcryptjs, jsonwebtoken
+   * .env (addition)
+     * JWT_SECRET
+     * JWT_EXPIRY
